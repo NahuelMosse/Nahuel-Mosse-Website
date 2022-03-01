@@ -199,10 +199,11 @@ button:hover {
 }
 
 #work section {
-    width: 40%;
-    height: 40vh;
-    max-height: calc(560px * 9 / 16);
-    margin-top: 50px;
+    width: 60%;
+    height: 60vh;
+    max-width: calc(560px * 9 / 16);
+    max-height: none;
+    margin-top: 100px;
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
@@ -217,8 +218,18 @@ button:hover {
 #work section iframe {
     width: 250%;
     height: 250%;
-    border-radius: 40px;
+    border-radius: 33px;
     transform: scale(0.4) translateX(-75%) translateY(-75%);
+}
+
+@media only screen and (min-width: 1000px) {
+    #work section {
+        width: 40%;
+        height: 40vh;
+        max-width: none;
+        max-height: calc(560px * 9 / 16);
+        margin-top: 50px;
+    }
 }
 
 /* Footer */
