@@ -87,6 +87,16 @@ button:hover {
     display: inline;
 }
 
+@media only screen and (min-width: 700px) {
+    .nav-item {
+        display: inline;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
 /* Home page */
 
 #home-card {
