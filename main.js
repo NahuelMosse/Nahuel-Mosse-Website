@@ -1,3 +1,5 @@
+//Horizontal scroll
+
 const container = document.getElementById("big-container");
 const button_1 = document.getElementById('button_1');
 const button_2 = document.getElementById("button_2");
