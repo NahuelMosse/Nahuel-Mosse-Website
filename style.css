@@ -5,6 +5,7 @@
     --secondary-color: #E7406A;
     --main-color-light: #111D35;
     --text-color: white;
+    overflow-x: hidden;
 }
 
 * {
@@ -187,60 +188,37 @@ button:hover {
 
 /* Work */
 
-#scroll-container {
+#work {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
-    height: 70%;
-    background-color: var(--main-color-light);
-    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1400px;
+    min-height: 100%;
 }
 
-#horizontal-scroll {
-    height: 70%;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-#big-container {
-    display: flex;
-    justify-content: center;
-    height: calc(100% - 4px);
-    width: 200%;
-}
-
-#big-container section {
-    width: calc(100% / 3);
-    height: 100%;
-    margin: 0 2%;
+#work section {
+    width: 40%;
+    height: 40vh;
+    max-height: calc(560px * 9 / 16);
+    margin-top: 50px;
     border-style: solid;
     border-width: 2px;
+    border-radius: 15px;
     border-color: var(--secondary-color);
 }
 
-#big-container section iframe {
-    width: 200%;
-    height: 200%;
-    transform: scale(0.5) translateY(-50%) translateX(-50%);
+#work section:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.5);
 }
 
-#horizontal-menu {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    width: 100px;
-}
-
-#horizontal-menu button {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: none;
-    transform: scale(0.7);
-    background-color: var(--secondary-color);
+#work section iframe {
+    width: 250%;
+    height: 250%;
+    border-radius: 40px;
+    transform: scale(0.4) translateX(-75%) translateY(-75%);
 }
 
 /* Footer */
