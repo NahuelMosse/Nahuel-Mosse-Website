@@ -9,6 +9,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Rubik', sans-serif;
     color: var(--text-color);
 }
@@ -40,10 +41,6 @@ p {
     align-items: center;
 }
 
-.card {
-    width: 75%;
-}
-
 /* Header */
 
 header {
@@ -52,7 +49,7 @@ header {
     align-items: center;
     position: absolute;
     width: calc(100% - 4%);
-    padding: 2% 2%;
+    padding: 16px 2%;
 }
 
 #logo {
@@ -93,35 +90,65 @@ button:hover {
 /* Home page */
 
 #home-card {
-    display: flex;
-    padding: 3%;
-    background-color: transparent;
+    width: auto;
+    height: auto;
+    border-style: none;
+}
+
+#home-card h3 {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#home-card h1 {
+    font-size: 3rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
     border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-width: 2px;
     border-color: var(--secondary-color);
+    margin-bottom: 2px;
 }
 
-#home-text h3 {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-
-#home-text h1 {
-    font-size: 48px;
-}
-
-#home-text h2 {
-    font-size: 24px;
+#home-card h2 {
+    font-size: 1.5rem;
+    height: 1.5rem;
     font-weight: 600;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #home-contact {
-    display: none;
-    flex-direction: column;
+    display: flex;
     justify-content: space-between;
-    padding-left: 20%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {  
+    #home-card h1 {
+        font-size: 4rem;
+        height: 4rem;
+    }
+    
+    #home-card h2 {
+        font-size: 2.25rem;
+        height: 2.25rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #home-border {
+        padding: 90px 130px;
+        border-style: solid;
+        border-color: #E7406A;
+    }
 }
 
 /* About page */
@@ -246,78 +273,4 @@ footer div {
     border-width: 2px;
     border-radius: 11px;
     border-color: var(--secondary-color);
-}
-
-/* Media querys */
-
-@media (min-width: 810px) {
-
-    .nav-item {
-        display: inline;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .card {
-        width: 60%;
-    }
-
-    #home-card h1 {
-        font-size: 64px;
-    }
-    
-    .card h2 {
-        font-size: 36px;
-    }
-}
-
-@media (min-width: 1000px) {
-    #home-contact {
-        display: flex;
-    }
-
-    header {
-        width: calc(100% - 6%);
-        padding: 2% 3%;
-    }
-
-    #home-card {
-        padding: 4%;
-    }
-
-    #big-container section {
-        margin: 0 3%;
-    }
-}
-
-@media (min-width: 1350px) {
-    .card {
-        width: 50%;
-    }
-
-    #home-card {
-        padding: 5%;
-    }
-
-    #big-container section {
-        margin: 0 4%;
-    }
-}
-
-@media (min-width: 1600px) {
-    .card {
-        width: 40%;
-    }
-
-    #big-container section {
-        margin: 0 5%;
-    }
-}
-
-@media (min-width: 1800px) {
-    .card {
-        width: 35%;
-    }
 }
