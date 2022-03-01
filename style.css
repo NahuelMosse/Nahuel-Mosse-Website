@@ -163,20 +163,33 @@ button:hover {
 
 /* About page */
 
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+#about-card {
+    max-width: 700px;
+    margin: 0 3%;
+}
+
 #about-card h2 {
-    padding-left: 10px;
-}
-
-#about-card hr {
-    border-color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 500;
     border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    margin-bottom: 2px;
 }
 
-#about-text {
+#about-card p {
     padding: 10px;
-}
-
-#about-text p {
     text-align: justify;
 }
 
