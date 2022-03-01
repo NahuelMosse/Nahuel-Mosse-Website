@@ -168,7 +168,6 @@ button:hover {
     justify-content: center;
     height: calc(100% - 4px);
     width: 200%;
-    transform: translateX(-25%);
 }
 
 #big-container section {
