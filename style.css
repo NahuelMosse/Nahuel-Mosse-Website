@@ -76,9 +76,64 @@ nav {
     align-items: center;
 }
 
-nav p {
-    cursor: hand;
-    cursor: pointer;
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+#apps ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(35px);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    background-color: var(--main-color-light);
+}
+
+#apps:hover ul {
+    display: flex;
+}
+
+#apps ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#apps ul li img {
+    height: 24px;
+}
+
+#settings ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    background-color: var(--main-color-light);
+}
+
+#settings:hover ul {
+    display: flex;
+}
+
+#settings ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#settings ul li img {
+    margin-right: 5px;
 }
 
 .nav-item {
@@ -88,15 +143,7 @@ nav p {
     color: var(--secondary-color);
 }
 
-button[class="nav-item"] {
-    background: none;
-    border: none;
-    height: 24px;
-    width: 24px;
-    padding: 0;
-}
-
-button:hover {
+.nav-item:hover {
     cursor: hand;
     cursor: pointer;
 }
