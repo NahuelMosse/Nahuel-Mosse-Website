@@ -106,10 +106,6 @@ nav ul li {
     padding: 10px;
 }
 
-#apps ul li img {
-    height: 24px;
-}
-
 #settings ul {
     display: none;
     flex-direction: column;
@@ -143,12 +139,12 @@ nav ul li {
     color: var(--secondary-color);
 }
 
-.nav-item:hover {
+nav li:hover {
     cursor: hand;
     cursor: pointer;
 }
 
-#menu {
+#menu img {
     display: inline;
 }
 
@@ -157,9 +153,34 @@ nav ul li {
         display: inline;
     }
 
-    #menu {
+    #menu img {
         display: none;
     }
+}
+
+#menu-dropdown ul {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    background-color: var(--main-color-light);
+}
+
+#menu-dropdown ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+#menu-dropdown ul li img {
+    height: 2rem;
+    margin-right: 10px;
 }
 
 /* Home page */
