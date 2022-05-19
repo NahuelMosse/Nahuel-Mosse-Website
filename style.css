@@ -5,7 +5,6 @@
     --secondary-color: #E7406A;
     --main-color-light: #111D35;
     --text-color: white;
-    overflow-x: hidden;
 }
 
 * {
@@ -297,11 +296,6 @@ nav li:hover {
     margin-bottom: 2px;
 }
 
-#about-card p {
-    padding: 10px;
-    text-align: justify;
-}
-
 /* Work */
 
 #work {
@@ -310,16 +304,15 @@ nav li:hover {
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 100px 0;
-    max-width: 1400px;
+    max-width: 1600px;
     min-height: 100%;
 }
 
 #work section {
-    width: 60%;
-    height: 60vh;
-    max-width: calc(560px * 9 / 16);
-    max-height: none;
-    margin-top: 100px;
+    width: 70%;
+    height: 35vh;
+    min-width: 400px;
+    margin: 30px 0;
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
@@ -331,20 +324,25 @@ nav li:hover {
     box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.5);
 }
 
-#work section iframe {
-    width: 250%;
-    height: 250%;
-    border-radius: 33px;
-    transform: scale(0.4) translateX(-75%) translateY(-75%);
+#work section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
     #work section {
-        width: 40%;
-        height: 40vh;
-        max-width: none;
-        max-height: calc(560px * 9 / 16);
-        margin-top: 50px;
+        width: 35%;
+        height: 30vh;
+        margin: 40px 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #work section {
+        width: 35%;
+        height: 35vh;
+        margin: 50px 0;
     }
 }
 

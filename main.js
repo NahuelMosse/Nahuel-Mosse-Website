@@ -1,4 +1,4 @@
-const menu = document.getElementById("menu");
+/*const menu = document.getElementById("menu");
 const menuCross = document.getElementById("menu-cross");
 const dropdown = document.querySelector("#menu-dropdown");
 
@@ -8,4 +8,4 @@ menu.addEventListener("click", ()=>{
 
 menuCross.addEventListener("click", ()=>{
     dropdown.style.cssText = "display: none;";
-});
+});*/
